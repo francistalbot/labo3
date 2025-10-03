@@ -1,5 +1,14 @@
 import "./App.css";
 import { Card, CardContent, CardHeader, CardIcon } from "./components/Card";
+import fiveStarsImg from "./assets/images/illustration-five-stars.webp";
+import multiplePlatformsImg from "./assets/images/illustration-multiple-platforms.webp";
+import consistentScheduleImg from "./assets/images/illustration-consistent-schedule.webp";
+import schedulePostsImg from "./assets/images/illustration-schedule-posts.webp";
+import growFollowersImg from "./assets/images/illustration-grow-followers.webp";
+import audienceGrowthImg from "./assets/images/illustration-audience-growth.webp";
+import createPostImg from "./assets/images/illustration-create-post.webp";
+import aiContentImg from "./assets/images/illustration-ai-content.webp";
+
 function App() {
   return (
     <main className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 gap-10">
@@ -8,21 +17,13 @@ function App() {
           Social Media <span className=" text-yellow-500 ">10x</span>{" "}
           <i>Faster</i> with AI
         </CardHeader>
-        <CardIcon
-          src="/src/assets/images/illustration-five-stars.webp"
-          alt="Icône"
-          className="max-h-7 mb-2"
-        />
+        <CardIcon src={fiveStarsImg} alt="Icône" className="max-h-7 mb-2" />
         <CardContent>
           <span className="italic">Over 4,000 5-star reviews</span>
         </CardContent>
       </Card>
       <Card bgColor="#fff" className="lg:items-start">
-        <CardIcon
-          src="/src/assets/images/illustration-multiple-platforms.webp"
-          alt="Icône"
-          className="mb-5"
-        />
+        <CardIcon src={multiplePlatformsImg} alt="Icône" className="mb-5" />
         <CardHeader className="text-left text-2xl text-black font-semibold tracking-tighter pr-8">
           Manage multiple accounts and platforms.
         </CardHeader>
@@ -36,7 +37,7 @@ function App() {
         </CardHeader>
         <CardIcon
           alt=""
-          src="/src/assets/images/illustration-consistent-schedule.webp"
+          src={consistentScheduleImg}
           className="w-full lg:h-19 object-contain"
         />
       </Card>
@@ -49,7 +50,7 @@ function App() {
         </CardHeader>
         <CardIcon
           alt=""
-          src="/src/assets/images/illustration-schedule-posts.webp"
+          src={schedulePostsImg}
           className="lg:max-h-75 lg:w-200 lg:h-full mb-5"
         />
         <CardContent className="text-black lg:text-left">
@@ -63,7 +64,7 @@ function App() {
       >
         <CardIcon
           alt=""
-          src="/src/assets/images/illustration-grow-followers.webp"
+          src={growFollowersImg}
           className="max-h-60 mb-5 lg:mb-0"
         />
         <CardHeader className="text-4xl font-semibold text-left tracking-tighter">
@@ -80,32 +81,20 @@ function App() {
         <CardContent className="text-base font-normal text-black text-left  mb-5 lg:mb-auto">
           faster audience growth
         </CardContent>
-        <CardIcon
-          alt=""
-          src="/src/assets/images/illustration-audience-growth.webp"
-          className="max-h-17"
-        />
+        <CardIcon alt="" src={audienceGrowthImg} className="max-h-17" />
       </Card>
       <Card bgColor="hsl(31, 66%, 93%)" className="items-start py-7 px-5">
         <CardHeader className="text-left font-semibold text-black text-3xl tracking-tighter">
           Create and schedule content{" "}
           <span className="italic text-purple-500">quicker</span>
         </CardHeader>
-        <CardIcon
-          alt=""
-          src="/src/assets/images/illustration-create-post.webp"
-          className="max-h-25"
-        />
+        <CardIcon alt="" src={createPostImg} className="max-h-25" />
       </Card>
       <Card bgColor="hsl(39, 100%, 71%)" className="items-start py-7 px-5">
         <CardHeader className="text-left text-3xl font-semibold text-black tracking-tighter">
           Write your content using AI.
         </CardHeader>
-        <CardIcon
-          alt=""
-          src="/src/assets/images/illustration-ai-content.webp"
-          className="max-h-50"
-        />
+        <CardIcon alt="" src={aiContentImg} className="max-h-50" />
       </Card>
     </main>
   );
