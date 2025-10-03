@@ -1,0 +1,74 @@
+:root {
+  --purple-100: hsl(255, 100%, 90%);
+  --purple-500: hsl(251, 54%, 55%);
+  --yellow-100: hsl(50, 100%, 90%);
+  --yellow-500: hsl(42, 93%, 59%);
+  --font-medium: 400;
+  --font-semibold: 500;
+  --max-width: 1280px;
+  --padding: 2rem;
+  --text-center: center;
+}
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.text-purple-500 {
+  color: var(--purple-500);
+}
+.text-yellow-500 {
+  color: var(--yellow-500);
+}
+.font-semibold {
+  font-weight: var(--font-semibold);
+}
+.font-medium {
+  font-weight: var(--font-medium);
+}
+.max-h-inherit {
+  max-height: inherit;
+}
+
+ @media (width >= 64rem) {
+  .grid .card:nth-child(1) {
+    grid-area: first;
+  }
+  .grid .card:nth-child(2) {
+    grid-area: second;
+  }
+  .grid .card:nth-child(3) {
+    grid-area: third;
+  }
+  .grid .card:nth-child(4) {
+    grid-area: fourth;
+  }
+  .grid .card:nth-child(5) {
+    grid-area: fifth;
+  }
+  .grid .card:nth-child(6) {
+    grid-area: sixth;
+  }
+  .grid .card:nth-child(7) {
+    grid-area: seventh;
+  }
+  .grid .card:nth-child(8) {
+    grid-area: eighth;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 0.9fr 0.9fr 2fr;
+    grid-template-areas:
+      
+      "seventh first first fourth"
+      "seventh second third fourth"
+      "eighth second third fourth"
+      "eighth sixth fifth fifth";
+  }
+ }
